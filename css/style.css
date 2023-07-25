@@ -8,8 +8,10 @@
 }
 
 body{
-    font-family:'Poppins', sans-serif;
-    background-color:white;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
 }
 
 /*-----HEADER-----*/
@@ -160,12 +162,15 @@ main section div img{
     width: 60px;
 }
 
-
 /*-----FOOTER-----*/
 
 footer div a img{
-    width: 3%;
-    height: 3%;
+    width: 30px;
+    height: auto;
+}
+
+footer div{
+    margin-bottom: 1rem;
 }
 
 #contacto {
@@ -191,9 +196,7 @@ footer div a img{
     align-self: flex-start; 
 }
 .contact-form {
-    width: 30%; 
-    margin: 0 auto;
-    margin-top: -215px;
+    margin-top: -1.5rem;
 }
 .contact-form form {
     display: flex;
