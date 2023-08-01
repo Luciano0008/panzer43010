@@ -72,7 +72,7 @@ body{
     padding: 0%;
 }
 body header img{
-    width: 500px;
+    width: 350px;
     height: auto;
 }
 header img{
@@ -113,18 +113,20 @@ header img{
 .carousel-control-next {
     right: 10px; 
 }
+
 body hr {
-    border: none;
-    border-top: 2px solid #e28b07; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-    transition: all 0.3s ease; 
-    margin: 20px 0;
+  border: none;
+  border-top: 2px solid #e28b07; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
+  margin: 20px auto; /* Alinea el HR en el centro del navegador y establece un margen superior e inferior de 20px */
+  width: 80%; /* Modifica el ancho del HR a un 80% del ancho del contenedor */
 }
 
 /*MAIN/IMG/CARTAS*/
 .card {
-    max-width: 400px; 
+    max-width: 350px; 
     margin: 0 auto; 
     border-radius: 10px;
     box-shadow: 0 8px 16px black; 
