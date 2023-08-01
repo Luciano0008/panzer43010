@@ -124,11 +124,11 @@ body hr {
 
 /*MAIN/IMG/CARTAS*/
 .card {
-    max-width: 500px; 
+    max-width: 400px; 
     margin: 0 auto; 
     border-radius: 10px;
     box-shadow: 0 8px 16px black; 
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
 }
   
 .card-img-top {
@@ -136,12 +136,12 @@ body hr {
     height: auto;
 }
 
-/*-----LOGO DE WHATS APP-----*/
+/*-----LOGO DE WHATSAPP-----*/
 
 .whatsapp-icon {
   position: fixed;
   bottom: 100px; 
-  right: 30px; 
+  right: 90px; 
   z-index: 9999; 
 }
 .whatsapp-icon img {
@@ -151,7 +151,7 @@ body hr {
   transition: transform 0.3s ease; 
 }
 .whatsapp-icon img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.2); 
   box-shadow: 0 8px 16px rgba(12, 12, 12, 0.3); 
 }
 
@@ -212,17 +212,27 @@ body hr {
     left: 0; 
     border: 0; 
 }
+
+/*-----FOOTER / INSTAGRAM/FACEBOOK-----*/
+
 .social-icons-container {
     display: flex; 
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    border-radius: 10px; 
 }
 .social-icons-container .social-icons {
     margin: 10px; 
 }
 .social-icons-container .social-icons img {
     width: 50px; 
-    height: auto; 
+    height: auto;
+    transition: transform 0.3s ease; /* Agregar una transición suave a la transformación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Agregar una sombra al logo */ 
+}
+.social-icons-container .social-icons img:hover {
+  transform: scale(1.3); /* Aplicar una transformación de escala al pasar el mouse por encima */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Cambiar la sombra al pasar el mouse por encima */
 }
 
 /*-----FOOTER / BOTONES DE NAVEGACION-----*/
