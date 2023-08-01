@@ -141,7 +141,7 @@ body hr {
 .whatsapp-icon {
   position: fixed;
   bottom: 100px; 
-  right: 90px; 
+  right: 80px; 
   z-index: 9999; 
 }
 .whatsapp-icon img {
@@ -197,12 +197,13 @@ body hr {
 /*-----FOOTER/MAPS-----*/
 
 .map-container {
-    width: 100%; 
+    width: 80%; 
     height: 300px; 
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     overflow: hidden; 
     position: relative; 
+    margin: auto;
 } 
 .map-container iframe {
     width: 100%; 
@@ -237,22 +238,34 @@ body hr {
 
 /*-----FOOTER / BOTONES DE NAVEGACION-----*/
 
-.footer-option {
-  color: #333; 
-  font-size: 18px; 
-  text-decoration: none; 
-  padding: 10px 15px; 
-  border-radius: 5px; 
-  transition: background-color 0.3s ease; 
-  margin-right: 20px; 
+/* Estilos para los botones del footer */
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para que los botones se ajusten al ancho del navegador */
 }
-.footer-option:last-child {
-  margin-right: 0; 
+
+.footer-buttons .footer-option {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 5px; /* Espacio entre los botones */
 }
-.footer-option:hover {
-  background-color: #aaa7a7; 
+
+.footer-buttons .footer-option:hover {
+  background-color: #aaa7a7;
 }
-.footer-option.active {
-  background-color: #f7f7f7; 
-  font-weight: bold; 
+
+.footer-buttons .footer-option.active {
+  background-color: #f7f7f7;
+  font-weight: bold;
 }
+
+
+
+
+
