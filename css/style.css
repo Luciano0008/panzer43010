@@ -54,7 +54,6 @@ header nav{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-
 .navbar {
   background-color: transparent; 
   transition: background-color 0.5s; 
@@ -63,6 +62,16 @@ header nav{
 .navbar.scrolled {
   background-color: #f8f9fa; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Desplazar los elementos del menú hacia el 30% del lado derecho del navegador */
+.navbar-nav {
+  margin-left: 70%;
+}
+
+/* Separar los elementos del menú entre sí */
+.nav-item {
+  margin-right: 20px; /* Ajusta el valor según la separación deseada */
 }
 
 body{
@@ -84,10 +93,11 @@ header img{
 /*--MAIN/SLIDER--*/
 
 #carouselExampleFade {
-    max-width: 100%; 
-    margin: 0 auto; 
-    box-shadow: 0 8px 16px black 
-    overflow: hidden; 
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 20px; /* Agrega bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+  overflow: hidden;
 }
   .carousel-item img {
     width: 100%; 
