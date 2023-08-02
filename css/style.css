@@ -74,7 +74,7 @@ header nav{
   margin-right: 20px; /* Ajusta el valor según la separación deseada */
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     margin: 0%;
@@ -134,25 +134,41 @@ body hr {
   width: 80%; /* Modifica el ancho del HR a un 80% del ancho del contenedor */
 }
 
+body section p{
+  text-align: center;
+  color: #e28b07;
+  font-size: 25px;
+  font-weight:bold;
+}
+
 /*MAIN/IMG/CARTAS*/
+
 .card {
-    max-width: 350px; 
+    max-width: 400px; 
     margin: 0 auto; 
     border-radius: 10px;
     box-shadow: 0 8px 16px black; 
-    border: 1px solid #ccc;
+    border: 3px solid #ccc; 
+    font-size: 17px;
 }
-  
 .card-img-top {
     width: 100%; 
     height: auto;
 }
-
+.card-text {
+  font-weight: bold; /* Agregar negrita a todo el texto dentro de la card */
+}
+.card h5.card-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* Cambiar el grosor del subrayado */
+  text-decoration-color: #e28b07; /* Cambiar el color del subrayado */
+}
 /*-----LOGO DE WHATSAPP-----*/
 
 .whatsapp-icon {
   position: fixed;
-  bottom: 100px; 
+  bottom: 152px; 
   right: 80px; 
   z-index: 9999; 
 }
@@ -216,6 +232,7 @@ body hr {
     overflow: hidden; 
     position: relative; 
     margin: auto;
+    border: 5px solid #ccc; 
 } 
 .map-container iframe {
     width: 100%; 
