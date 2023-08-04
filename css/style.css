@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,700&display=swap');
 
+
 /*-----HEADER-----*/
 
 header nav {
@@ -131,6 +132,18 @@ body section p {
 
 /*MAIN/IMG/CARTAS*/
 
+.container {
+  padding: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col-md-6 {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+}
 .card {
   max-width: 400px;
   margin: 0 auto;
@@ -138,6 +151,10 @@ body section p {
   box-shadow: 0 8px 16px black;
   border: 3px solid #ccc;
   font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card-img-top {
   width: 100%;
@@ -171,7 +188,7 @@ body section p {
   border-radius: 10px;
   font-weight: bold;
   width: 60% !important;
-  margin: 40px auto 10px;
+  margin: 10px auto 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 20px solid #85837f;
 }
