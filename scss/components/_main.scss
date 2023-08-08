@@ -1,0 +1,155 @@
+/*--BODY/H1/H2/PARRAFOS--*/
+
+main {
+    h1 {
+        color: #050505;
+        margin: 0;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+
+    h2 {
+        color: #050505;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 10px;
+        background: #f56606;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: rgb(255, 254, 254);
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fade-slide-in 1s ease forwards;
+
+        &:hover {
+            color: rgb(8, 8, 8);
+        }
+    }
+
+    @keyframes fade-slide-in {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /*--BODY/MAIN/IMAGENES--*/
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+
+        & {
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+
+            animation-timeline: --image;
+            animation-name: show;
+
+            animation-range: entry 25% cover 50%;
+            animation-fill-mode: both;
+        }
+
+        & {
+            border-radius: 20px;
+            box-shadow: 0 6px 12px black;
+            filter: brightness(100%);
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/img-fondo-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        filter: grayscale(60%);
+    }
+
+    header {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: -1;
+        }
+    }
+}
+
+/*MAIN/PDF´S*/
+
+main {
+    .btn {
+        display: block;
+        padding: 10px 20px;
+        background-color: #f56606;
+        color: #fff;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 60% !important;
+        margin: 10px auto 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 20px solid #85837f;
+
+        &:hover {
+            background-color: #f56606;
+        }
+    }
+}
+
+/*-----LOGO DE WHATSAPP-----*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 152px;
+    right: 25px;
+    z-index: 9999;
+
+    img {
+        width: 70px;
+        border-radius: 50%;
+        box-shadow: 0 8px 16px rgba(12, 12, 12, 0.3);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 16px rgba(12, 12, 12, 0.3);
+        }
+    }
+}
